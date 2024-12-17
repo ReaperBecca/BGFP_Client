@@ -80,7 +80,15 @@ class MenuManager {
                 ]
             },
             {
-                label: 'Test'
+                label: 'Test',
+                submenu: [
+                    {
+                        label: 'Test Menu',
+                        click: () => {
+                            console.log('Test Menu Clicked');
+                        }
+                    }
+                ]
             }
         ];
 
