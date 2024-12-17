@@ -83,7 +83,20 @@
       "provider": "github",
       "owner": "ReaperBecca",
       "repo": "BGFP_Client"
-    }]
+    }],
+    "appId": "com.brimstonegames.fanportal",
+    "productName": "Brimstone Games Fan Portal",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": ["nsis"],
+      "icon": "system/images/favicon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "allowToChangeInstallationDirectory": false
+    }
   },
   "author": "ReaperBecca",
   "license": "MIT"
