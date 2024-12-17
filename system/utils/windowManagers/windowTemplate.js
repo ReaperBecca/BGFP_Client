@@ -14,6 +14,7 @@ class WindowManager {
             icon: './system/images/favicon.ico'
         });
         this.windows.set(name, window);
+        window.maximize();
         return window;
     }
 
@@ -48,4 +49,4 @@ class WindowManager {
     }
 }
 
-module.exports = new WindowManager();
+module.exports = new WindowManager();module.exports = new WindowManager();
