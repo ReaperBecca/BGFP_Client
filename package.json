@@ -81,8 +81,8 @@
   "build": {
     "publish": [{
       "provider": "github",
-      "owner": "your-github-username",
-      "repo": "your-repo-name"
+      "owner": "ReaperBecca",
+      "repo": "BGFP_Client"
     }]
   },
   "author": "ReaperBecca",
