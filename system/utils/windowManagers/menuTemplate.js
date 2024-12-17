@@ -42,10 +42,10 @@ class MenuManager {
                 submenu: [
                     {
                         label: 'Force Update & Restart',
-                        click: () => {
-                            autoUpdater.checkForUpdates();
-                            app.relaunch();
-                            app.exit();
+                        click: async () => {
+                            await autoUpdater.checkForUpdates();
+                            await autoUpdater.downloadUpdate();
+                            autoUpdater.quitAndInstall(false, true);
                         }
                     }
                 ]
