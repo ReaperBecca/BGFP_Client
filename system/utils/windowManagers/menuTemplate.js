@@ -60,6 +60,22 @@ class MenuManager {
                             await autoUpdater.downloadUpdate();
                             autoUpdater.quitAndInstall(true, true);
                         }
+                    },
+                    { type: 'separator' },
+                    {
+                        label: 'Reset Application',
+                        click: () => {
+                            const mainWindow = this.windowManager.getWindow('main');
+                            mainWindow.loadURL('https://reaperbecca.github.io/Brimstone_Games_Fan_Portal/');
+                        }
+                    },
+                    {
+                        label: 'Force Quit and Reload',
+                        accelerator: process.platform === 'darwin' ? 'Cmd+Shift+R' : 'Ctrl+Shift+R',
+                        click: () => {
+                            app.relaunch();
+                            app.exit(0);
+                        }
                     }
                 ]
             }
