@@ -78,6 +78,9 @@ class MenuManager {
                         }
                     }
                 ]
+            },
+            {
+                label: 'Test'
             }
         ];
 
